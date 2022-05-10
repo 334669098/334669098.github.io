@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>My New Hugo Site</title>
+<meta name="generator" content="Hugo 0.98.0" />
+<link href="http://example.org//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="http://example.org/">
+<link rel="stylesheet" href="http://example.org/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="http://example.org/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="http://example.org/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="">
+<meta itemprop="description" content=""></head>
+<body><div class="container"><header>
+<h1>My New Hugo Site</h1>
+</header>
+
+<div class="content-container">
+<main><h1 id="使用hugo构建文档网站并发布内容">使用Hugo构建文档网站并发布内容</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+<h2 id="procedure">Procedure</h2>
+<h3 id="install-hugo">Install Hugo</h3>
+<ol>
+<li>下载<a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220510%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220510T072054Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=00388a437c3910629c7bf18387db540c93bb3c0b7a4242d403dcaf798a088a5f&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=11180687&amp;response-content-disposition=attachment%3B%20filename%3Dhugo_0.98.0_Windows-64bit.zip&amp;response-content-type=application%2Foctet-stream">Hugo</a>。本文以Windows 64-bit为例，其他版本见 (<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>) 。</li>
+<li>将下载的压缩包解压至任意路径，并将该路径添加至环境变量<code>Path</code>。</li>
+<li>执行<code>hugo -version</code> ，如显示版本号，则安装完成。</li>
+</ol>
+<h3 id="create-a-new-site">Create a New Site</h3>
+<ol>
+<li>创建站点目录（如<code>D:\Hugo\Sites</code>）。</li>
+<li>在站点目录下执行<code>hugo new site hugodemohgz</code>创建站点，<code>hugodemohgz</code>为示例，可替换成你实际的站点名称。</li>
+</ol>
+<h3 id="add-a-theme">Add a Theme</h3>
+<ol>
+<li>在<code>hugodemohgz</code>目录下执行<code>git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc </code>下载主题<strong>Techdoc</strong>，其他主题见https://themes.gohugo.io。在命令中，<code>https://github.com/thingsym/hugo-theme-techdoc.git</code>为主题在Github中的下载地址，<code>/themes/techdoc </code>为下载到本地的目录。</li>
+<li>打开<code>config.toml</code>配置文件，在最后添加一行<code>theme = &quot;techdoc&quot;</code> ，并保存退出。</li>
+</ol>
+<h2 id="add-some-content">Add Some Content</h2>
+<ol>
+<li>111</li>
+</ol>
+<p>ss</p>
+<nav class="pagination"><a class="nav nav-next" href="http://example.org/post/" title="">Next -  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><div class="edit-meta">
+
+<br></div><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
