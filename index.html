@@ -79,7 +79,7 @@
 <ol>
 <li>
 <p>In the <code>hugodemohgz</code> directory, download the theme <strong>Techdoc</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#e6db74">`</span>git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc <span style="color:#e6db74">`</span>  <span style="color:#75715e">#`https://github.com/thingsym/hugo-theme-techdoc.git` is the URL of the theme in GitHub, and `/themes/techdoc` is the local directory of the downloaded theme.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#e6db74">`</span>git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc <span style="color:#e6db74">`</span>  <span style="color:#75715e"># `https://github.com/thingsym/hugo-theme-techdoc.git` is the URL of the theme in GitHub, and `/themes/techdoc` is the local directory of the downloaded theme.</span>
 </span></span></code></pre></div><p>See <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> for more themes.</p>
 </li>
 <li>
@@ -111,6 +111,19 @@
 <p>In the <code>hugodemohgz/public/</code> directory, add a remote repository for the local repository.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin git@github.com:334669098/334669098.github.io.git  <span style="color:#75715e"># `334669098` is an example GitHub username.</span>
 </span></span></code></pre></div></li>
+<li>
+<p>In the <code>hugodemohgz/public/</code> directory, commit the changes to the local repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># View the current status.</span>
+</span></span><span style="display:flex;"><span>git add .   <span style="color:#75715e"># Add all modified files.</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add a new post&#34;</span>  <span style="color:#75715e"># Commit the changes. &#34;Add a new post&#34; is an example commit message.</span>
+</span></span></code></pre></div></li>
+<li>
+<p>In the <code>hugodemohgz/public/</code> directory, push the changes to the remote repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div></li>
+<li>
+<p>Visit <a href="https://334669098.github.io">https://334669098.github.io</a> to view the document.</p>
+</li>
 </ol>
 <nav class="pagination">
 </nav><div class="edit-meta">
