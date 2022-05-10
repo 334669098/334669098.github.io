@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>He Guangzhong Hugo Demo</title>
-<meta name="description" content="put your description">
+<meta name="description" content="He Guangzhong made this demo for QingCloud.">
 <meta name="generator" content="Hugo 0.98.0" />
 <link href="https://334669098.github.io/index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="https://334669098.github.io/">
@@ -18,7 +18,7 @@
 :root {}
 </style>
 <meta property="og:title" content="" />
-<meta property="og:description" content="put your description" />
+<meta property="og:description" content="He Guangzhong made this demo for QingCloud." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://334669098.github.io/" /><meta property="og:image" content="https://334669098.github.io/images/og-image.png"/><meta property="og:site_name" content="Hugo Techdoc Theme" />
 
@@ -26,12 +26,12 @@
 <meta name="twitter:image" content="https://334669098.github.io/images/og-image.png"/>
 
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="put your description"/>
+<meta name="twitter:description" content="He Guangzhong made this demo for QingCloud."/>
 <meta itemprop="name" content="">
-<meta itemprop="description" content="put your description"></head>
+<meta itemprop="description" content="He Guangzhong made this demo for QingCloud."></head>
 <body><div class="container"><header>
 <h1>He Guangzhong Hugo Demo</h1><span class="version">Version 0.9.7</span><a href="https://github.com/thingsym/hugo-theme-techdoc" class="github"><i class="fab fa-github"></i></a>
-<p class="description">put your description</p>
+<p class="description">He Guangzhong made this demo for QingCloud.</p>
 
 </header>
 <div class="global-menu">
@@ -42,31 +42,91 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1 id="使用hugo构建文档网站并发布至github-pages">使用Hugo构建文档网站并发布至GitHub Pages</h1>
+<main><h1 id="build-a-documentation-website-with-hugo-and-github-pages">Build a Documentation Website with Hugo and GitHub Pages</h1>
 <h2 id="introduction">Introduction</h2>
 <p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>You have a GitHub account.</li>
+<li>You have created a repository <em>username</em>**.github.io** in your GitHub account. In this document, <strong>334669098.github.io</strong> is used as an example.</li>
+<li>Your GitHub Pages site is currently being built from the <code>master</code> branch. <a href="https://docs.github.com/articles/configuring-a-publishing-source-for-github-pages/">Learn more</a>.</li>
+</ol>
 <h2 id="procedure">Procedure</h2>
 <h3 id="install-hugo">Install Hugo</h3>
 <ol>
-<li>下载<a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220510%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220510T072054Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=00388a437c3910629c7bf18387db540c93bb3c0b7a4242d403dcaf798a088a5f&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=11180687&amp;response-content-disposition=attachment%3B%20filename%3Dhugo_0.98.0_Windows-64bit.zip&amp;response-content-type=application%2Foctet-stream">Hugo</a>。本文以Windows 64-bit为例，其他版本见 (<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>) 。</li>
-<li>将下载的压缩包解压至任意路径，并将该路径添加至环境变量<code>Path</code>。</li>
-<li>执行<code>hugo -version</code> ，如显示版本号，则安装完成。</li>
+<li>
+<p>Download [Hugo](<a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz">https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz</a> =attachment%3B%20filename%3Dhugo_0.98.0_Windows-64bit.zip&amp;response-content-type=application%2Foctet-stream). In this document, Hugo for Windows 64-bit is used as an example. For other releases, see <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>.</p>
+</li>
+<li>
+<p>Unzip the downloaded package to any path and add the path to the environment variable <code>Path</code>.</p>
+</li>
+<li>
+<p>Check the Hugo version. If the version number is displayed, the installation is complete.</p>
+<pre tabindex="0"><code>hugo -version
+</code></pre></li>
 </ol>
 <h3 id="create-a-new-site">Create a New Site</h3>
 <ol>
-<li>创建站点目录（如<code>D:\Hugo\Sites</code>）。</li>
-<li>在站点目录下执行<code>hugo new site hugodemohgz</code>创建站点，<code>hugodemohgz</code>为示例，可替换成你实际的站点名称。</li>
+<li>
+<p>Create a site directory. In this document, <code>D:\Hugo\Sites</code> is used as an example.</p>
+</li>
+<li>
+<p>Create a site in <code>D:\Hugo\Sites</code>.</p>
+<pre tabindex="0"><code>hugo new site hugodemohgz # `hugodemohgz` is an example site name.
+</code></pre></li>
 </ol>
 <h3 id="add-a-theme">Add a Theme</h3>
 <ol>
-<li>在<code>hugodemohgz</code>目录下执行<code>git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc </code>下载主题<strong>Techdoc</strong>，其他主题见https://themes.gohugo.io。在命令中，<code>https://github.com/thingsym/hugo-theme-techdoc.git</code>为主题在Github中的下载地址，<code>/themes/techdoc </code>为下载到本地的目录。</li>
-<li>打开<code>config.toml</code>配置文件，在最后添加一行<code>theme = &quot;techdoc&quot;</code> ，并保存退出。</li>
+<li>
+<p>In the <code>hugodemohgz</code> directory, download the theme <strong>Techdoc</strong>.</p>
+<pre tabindex="0"><code>`git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc `  #`https://github.com/thingsym/hugo-theme-techdoc.git` is the URL of the theme in GitHub, and `/themes/techdoc` is the local directory of the downloaded theme.
+</code></pre><p>See <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> for more themes.</p>
+</li>
+<li>
+<p>Open the <code>config.toml</code> file, add a line <code>theme = &quot;techdoc&quot;</code> at the end, save and exit.</p>
+</li>
 </ol>
-<h2 id="add-some-content">Add Some Content</h2>
+<h3 id="add-some-content">Add Some Content</h3>
 <ol>
-<li>111</li>
+<li>
+<p>Create an index document <code>_index.md</code> in the <code>hugodemohgz\content</code> directory.</p>
+<pre tabindex="0"><code>hugo new _index.md
+</code></pre></li>
+<li>
+<p>Edit <code>_index.md</code>, add content and save.</p>
+</li>
 </ol>
-<p>ssfssff666</p>
+<h3 id="publish-to-github-pages">Publish to GitHub Pages</h3>
+<ol>
+<li>
+<p>Create an index document <code>_index.md</code> in the <code>hugodemohgz\content</code> directory.</p>
+<pre tabindex="0"><code>hugo
+</code></pre></li>
+<li>
+<p>Go to the <code>hugodemohgz/public/</code> directory and initialize the Git repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/hugodemohgz/public/  <span style="color:#75715e"># Generated HTML files are stored in the `public` folder, which will be converted to a Git repository.</span>
+</span></span><span style="display:flex;"><span>git init  <span style="color:#75715e"># Initialize the Git repository.</span>
+</span></span></code></pre></div></li>
+<li>
+<p>In the <code>hugodemohgz/public/</code> directory, add a remote repository for the local repository.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>git remote add origin git@github.com:334669098/334669098.github.io.git  # `334669098` is an example GitHub username.
+</code></pre><ol start="5">
+<li>
+<p>In the <code>hugodemohgz/public/</code> directory, commit the changes to the local repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># View the current status.</span>
+</span></span><span style="display:flex;"><span>git add .   <span style="color:#75715e"># Add all modified files.</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add a new post&#34;</span>  <span style="color:#75715e"># Commit the changes. &#34;Add a new post&#34; is an example commit message.</span>
+</span></span></code></pre></div></li>
+<li>
+<p>In the <code>hugodemohgz/public/</code> directory, push the changes to the remote repository.</p>
+<pre tabindex="0"><code>git push -u origin master
+</code></pre></li>
+<li>
+<p>Visit <a href="334669098.github.io">334669098.github.io</a> to view the document.</p>
+</li>
+</ol>
 <nav class="pagination">
 </nav><div class="edit-meta">
 
