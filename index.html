@@ -55,15 +55,15 @@
 <h4 id="step-1-install-hugo">Step 1: Install Hugo</h4>
 <ol>
 <li>
-<p>Download [Hugo](<a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz">https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz</a> =attachment%3B%20filename%3Dhugo_0.98.0_Windows-64bit.zip&amp;response-content-type=application%2Foctet-stream). In this document, Hugo for Windows 64-bit is used as an example. For other releases, see <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>.</p>
+<p>Download <a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/11180687/2ce3a2b9-0ec1-40c3-be4a-4be602fa8060?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220510%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220510T072054Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=00388a437c3910629c7bf18387db540c93bb3c0b7a4242d403dcaf798a088a5f&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=11180687&amp;response-content-disposition=attachment%3B%20filename%3Dhugo_0.98.0_Windows-64bit.zip&amp;response-content-type=application%2Foctet-stream">Hugo</a>. In this document, Hugo for Windows 64-bit is used as an example. For other releases, see <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>.</p>
 </li>
 <li>
 <p>Unzip the downloaded package to any path and add the path to the environment variable <code>Path</code>.</p>
 </li>
 <li>
 <p>Check the Hugo version. If the version number is displayed, the installation is complete.</p>
-<pre tabindex="0"><code>hugo -version
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo -version
+</span></span></code></pre></div></li>
 </ol>
 <h4 id="step-2-create-a-new-site">Step 2: Create a New Site</h4>
 <ol>
@@ -72,15 +72,15 @@
 </li>
 <li>
 <p>Create a site in <code>D:\Hugo\Sites</code>.</p>
-<pre tabindex="0"><code>hugo new site hugodemohgz # `hugodemohgz` is an example site name.
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site hugodemohgz <span style="color:#75715e"># `hugodemohgz` is an example site name.</span>
+</span></span></code></pre></div></li>
 </ol>
 <h4 id="step-3-add-a-theme">Step 3: Add a Theme</h4>
 <ol>
 <li>
 <p>In the <code>hugodemohgz</code> directory, download the theme <strong>Techdoc</strong>.</p>
-<pre tabindex="0"><code>`git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc `  #`https://github.com/thingsym/hugo-theme-techdoc.git` is the URL of the theme in GitHub, and `/themes/techdoc` is the local directory of the downloaded theme.
-</code></pre><p>See <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> for more themes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#e6db74">`</span>git clone https://github.com/thingsym/hugo-theme-techdoc.git /themes/techdoc <span style="color:#e6db74">`</span>  <span style="color:#75715e">#`https://github.com/thingsym/hugo-theme-techdoc.git` is the URL of the theme in GitHub, and `/themes/techdoc` is the local directory of the downloaded theme.</span>
+</span></span></code></pre></div><p>See <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> for more themes.</p>
 </li>
 <li>
 <p>Open the <code>config.toml</code> file, add a line <code>theme = &quot;techdoc&quot;</code> at the end, save and exit.</p>
@@ -90,8 +90,8 @@
 <ol>
 <li>
 <p>Create an index document <code>_index.md</code> in the <code>hugodemohgz\content</code> directory.</p>
-<pre tabindex="0"><code>hugo new _index.md
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new _index.md
+</span></span></code></pre></div></li>
 <li>
 <p>Edit <code>_index.md</code>, add content and save.</p>
 </li>
@@ -100,8 +100,8 @@
 <ol>
 <li>
 <p>Create an index document <code>_index.md</code> in the <code>hugodemohgz\content</code> directory.</p>
-<pre tabindex="0"><code>hugo
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div></li>
 <li>
 <p>Go to the <code>hugodemohgz/public/</code> directory and initialize the Git repository.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/hugodemohgz/public/  <span style="color:#75715e"># Generated HTML files are stored in the `public` folder, which will be converted to a Git repository.</span>
@@ -111,8 +111,8 @@
 <p>In the <code>hugodemohgz/public/</code> directory, add a remote repository for the local repository.</p>
 </li>
 </ol>
-<pre tabindex="0"><code>git remote add origin git@github.com:334669098/334669098.github.io.git  # `334669098` is an example GitHub username.
-</code></pre><ol start="5">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin git@github.com:334669098/334669098.github.io.git  <span style="color:#75715e"># `334669098` is an example GitHub username.</span>
+</span></span></code></pre></div><ol start="5">
 <li>
 <p>In the <code>hugodemohgz/public/</code> directory, commit the changes to the local repository.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># View the current status.</span>
@@ -121,8 +121,8 @@
 </span></span></code></pre></div></li>
 <li>
 <p>In the <code>hugodemohgz/public/</code> directory, push the changes to the remote repository.</p>
-<pre tabindex="0"><code>git push -u origin master
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div></li>
 <li>
 <p>Visit <a href="334669098.github.io">334669098.github.io</a> to view the document.</p>
 </li>
